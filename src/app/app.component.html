@@ -3,5 +3,5 @@
 <h2>print title {{title}}</h2>
 <h2>phone:{{object.phone}}</h2>
 <button (click)="changePhone()">Change phone number</button>
-<app-product title="Este es mi tutulo por prop a traves de @Input del core de Angular"></app-product>
+<app-product title="Este es mi tutulo por prop a traves de @Input del core de Angular" [product]="product" *ngFor="let product of products"></app-product>
 </div>
